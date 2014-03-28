@@ -1,1 +1,11 @@
-<h1> Hi </h1>
+<h1> Add Dog Owner </h1>
+
+<%= simple_form_for @dog_owner do |f| %>
+  <%= f.input :first_name, label: "First Name" %>
+  <%= f.input :last_name, label: "Last Name" %>
+  <%= f.input :email, label: "Email" %>
+  <%= f.input :dog_name, label: "Dog's name" %>
+
+  <%= f.button :submit, 'Create Dog Owner' %>
+  
+<% end %>

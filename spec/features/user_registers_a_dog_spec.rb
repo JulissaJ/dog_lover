@@ -22,7 +22,6 @@ So that I can connect with other dog lovers
 			fill_in "Last Name", with: "Jansen"
 			fill_in "Email", with: "julissa.jansen@gmail.com"
 			fill_in "Dog's name", with: "Rory"
-			fill_in "Last name", with: "Jansen-Morales"
 			click_on "Create Dog Owner"
 
 			expect(page).to have_content "Contact was successfully created"

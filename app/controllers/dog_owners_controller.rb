@@ -1,5 +1,10 @@
 class DogOwnersController < ApplicationController
 
+
+	def index
+		@dog_owners = DogOwner.all
+	end
+
 	def show
 		@dog_owner = DogOwner.find(params[:id])
 	end

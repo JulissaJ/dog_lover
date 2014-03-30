@@ -27,4 +27,27 @@ So that I can connect with other dog lovers
 			expect(page).to have_content "Contact was successfully created"
 		end
 	end
+
+	context 'data entered persists on page' do
+			it 'shows all data' do 
+				visit '/dog_owners/new'
+
+			fill_in "First Name", with: "Julissa"
+			fill_in "Last Name", with: "Jansen"
+			fill_in "Email", with: "julissa.jansen@gmail.com"
+			fill_in "Dog's name", with: "Rory"
+			click_on "Create Dog Owner"
+			click_on "Back"
+
+			expect(page).to have_content "Julissa"
+			expect(page).to have_content "Jansen"
+			expect(page).to have_content "julissa.jansen@gmail.com"
+			expect(page).to have_content "Rory"
+		end
+	end
+
+
+
+
+
 end

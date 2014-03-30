@@ -20,6 +20,9 @@ class DogOwnersController < ApplicationController
 
     redirect_to dog_owner_path(@dog_owner), notice: "#{@dog_owner.first_name} successfully added."
   end
+
+  
+
 	
 
 

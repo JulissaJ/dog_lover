@@ -28,6 +28,7 @@ So that I can connect with other dog lovers
 		end
 	end
 
+
 	context 'data entered persists on page' do
 			it 'shows all data' do 
 				visit '/dog_owners/new'
@@ -39,8 +40,7 @@ So that I can connect with other dog lovers
 			click_on "Create Dog Owner"
 			click_on "Back"
 
-			expect(page).to have_content "Julissa"
-			expect(page).to have_content "Jansen"
+			expect(page).to have_content "Julissa Jansen"
 			expect(page).to have_content "julissa.jansen@gmail.com"
 			expect(page).to have_content "Rory"
 		end
